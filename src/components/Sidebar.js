@@ -22,7 +22,7 @@ const Sidebar = () => {
         <ul className="links">
           {links.map(({ text, url, id }) => (
             <li key={id}>
-              <Link to={url}>{text}</Link>
+              <Link to={url} onClick={closeSidebar}>{text}</Link>
             </li>
           ))}
           <li>
