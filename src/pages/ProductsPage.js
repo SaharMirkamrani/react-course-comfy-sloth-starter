@@ -3,7 +3,18 @@ import styled from 'styled-components'
 import { Filters, ProductList, Sort, PageHero } from '../components'
 
 const ProductsPage = () => {
-  return <h4>products page</h4>
+  return <main>
+    <PageHero title="products" />
+    <Wrapper className="page">
+      <section className="product-center products">
+        <Filters />
+        <div>
+          <Sort />
+          <ProductList />
+          </div>
+      </section>
+    </Wrapper>
+  </main>
 }
 
 const Wrapper = styled.div`
